@@ -1,0 +1,35 @@
+<script>
+
+     let Str = "";
+
+     for (let i = 0; i < 5; i++) {
+
+          for (let j = 0; j < 5; j++) {
+               if (i == 0 || i == 4 || j == 0 || j == 4) {
+                    Str += "*";
+               }
+               else {
+                    Str += " ";
+               }
+          }
+          Str += "\n";
+     }
+     console.log(Str);
+
+     //right-triangle
+     let triangleStr = "";
+
+     let num = 5;
+
+     for (let i = 1; i <= num; i++) {
+          for (let j = 0; j < num - i; j++) {
+               triangleStr += " ";
+          }
+          for (let k = 0; k < i; k++) {
+               triangleStr += "*";
+          }
+          triangleStr += "\n";
+     }
+     console.log(triangleStr);
+     
+</script>
